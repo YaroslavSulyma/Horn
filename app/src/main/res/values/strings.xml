@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">HornApp</string>
+    <string name="email">+38</string>
+    <string name="fragment_registration_switch_text_admin">Администратор</string>
+    <string name="fragment_registration_edit_text_name">ФИО</string>
+    <string name="fragment_registration_edit_text_name_organization">Название организации</string>
+    <string name="fragment_registration_text_view_and">and</string>
+    <string name="fragment_registration_clickable_text_view_privacy_policy">Privacy policy</string>
+    <string name="fragment_registration_clickable_text_view_terms_and_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="fragment_registration_text_view_by_registering_you_agree_to">By registering you agree to</string>
+    <string name="fragment_registration_button_register">Зарегистрироватья</string>
+    <string name="_38">+38</string>
+    <string name="horn">h o r n</string>
+    <string name="sign_in">Вход</string>
+    <string name="recover_pass">Для быстрого входа подключите</string>
+    <string name="text_touch_id">Touch ID</string>
+    <string name="skip">Пропустить</string>
+    <string name="connect_location">Подключите местонахождение</string>
+    <string name="register_now">У вас нету аккаунта? Зарегестрироваться сейчас</string>
+</resources>

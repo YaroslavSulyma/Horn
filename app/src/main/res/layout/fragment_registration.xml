@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_registration_constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".ui.RegistrationFragment">
+
+    <EditText
+        android:id="@+id/fragment_registration_et_name"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="142dp"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:fontFamily="arial"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:paddingBottom="11dp"
+        android:text="@string/fragment_registration_edit_text_name"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textCursorDrawable="@color/colorWhite"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/fragment_registration_et_phone"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:background="@drawable/edit_text_background"
+        android:digits="0123456789+"
+        android:ems="10"
+        android:inputType="phone"
+        android:maxLength="13"
+        android:paddingBottom="11dp"
+        android:text="@string/_38"
+        android:textColor="@color/colorWhite"
+        android:textCursorDrawable="@color/colorWhite"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_registration_et_name" />
+
+    <TextView
+        android:id="@+id/fragment_registration_tv_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:text="@string/fragment_registration_switch_text_admin"
+        android:textColor="@color/colorWhite"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/fragment_registration_et_phone"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_registration_et_phone" />
+
+    <Switch
+        android:id="@+id/fragment_registration_switch_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:thumb="@drawable/switch_thumb_background"
+        android:track="@drawable/switch_track"
+        app:layout_constraintEnd_toEndOf="@+id/fragment_registration_et_phone"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_registration_et_phone" />
+
+    <EditText
+        android:id="@+id/fragment_registration_et_name_organization"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:maxLines="2"
+        android:paddingBottom="11dp"
+        android:text="@string/fragment_registration_edit_text_name_organization"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textCursorDrawable="@color/colorWhite"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_registration_tv_admin" />
+
+
+    <TextView
+        android:id="@+id/fragment_registration_tv_terms_and_conditions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/poppins_light"
+        android:gravity="center"
+        android:text="By registering you agree to Terms &amp; Conditions \nand Privacy Policy"
+        android:textColor="@color/colorGrey"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/fragment_registration_btn_registration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_registration_et_name_organization" />
+
+    <Button
+        android:id="@+id/fragment_registration_btn_registration"
+        android:layout_width="315dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="79dp"
+        android:background="@drawable/button_registration"
+        android:fontFamily="@font/poppins_light"
+        android:text="@string/fragment_registration_button_register"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

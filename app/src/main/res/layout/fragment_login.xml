@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_login_constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:layout_weight="1"
+    tools:context=".ui.LoginFragment">
+
+    <TextView
+        android:id="@+id/fragment_login_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/reem_kufi"
+        android:text="@string/horn"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colorWhite"
+        android:textSize="32sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/fragment_login_iv_logo"
+        android:layout_width="151dp"
+        android:layout_height="151dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo_unicorn"
+        app:layout_constraintBottom_toTopOf="@+id/fragment_login_et_phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_login_tv_title" />
+
+    <EditText
+        android:id="@+id/fragment_login_et_phone"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/edit_text_background"
+        android:digits="0123456789+"
+        android:inputType="phone"
+        android:maxLength="13"
+        android:paddingBottom="28dp"
+        android:textCursorDrawable="@color/colorLightOrange"
+        android:text="@string/_38"
+        android:textColor="@color/colorLightOrange"
+        app:layout_constraintBottom_toTopOf="@+id/fragment_login_iv_fingerprint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/fragment_login_iv_fingerprint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="17dp"
+        android:src="@drawable/ic_fingerprint_orange_24dp"
+        app:layout_constraintBottom_toTopOf="@+id/fragment_login_btn_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/fragment_login_btn_login"
+        android:layout_width="315dp"
+        android:layout_height="62dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/button_registration"
+        android:fontFamily="@font/poppins_light"
+        android:text="@string/sign_in"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/fragment_login_tv_register_now"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/fragment_login_tv_register_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="28dp"
+        android:fontFamily="@font/poppins_light"
+        android:textColor="@color/colorGrey"
+        android:text="@string/register_now"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
